@@ -1,0 +1,41 @@
+sing System;
+
+using System;
+
+public class Program
+
+    static void Main(string[] args)
+    
+        Console.WriteLine("Enter Product 1 Price:");
+        int product1Price = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter Product 1 Quantity:");
+        int product1Quantity = int.Parse(Console.ReadLine());
+
+        int total1 = product1Price * product1Quantity;
+
+        Console.WriteLine("Enter Product 2 Price:");
+        int product2Price = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter Product 2 Quantity:");
+        int product2Quantity = int.Parse(Console.ReadLine());
+
+        int total2 = product2Price * product2Quantity;
+
+        Console.WriteLine("Enter Product 3 Price:");
+        int product3Price = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter Product 3 Quantity:");
+        int product3Quantity = int.Parse(Console.ReadLine());
+
+        int total3 = product3Price * product3Quantity;
+
+        Console.WriteLine("Enter Discount Percentage:");
+        int discount = int.Parse(Console.ReadLine());
+
+        int finalTotal = total1 + total2 + total3;
+        double discountedTotal = finalTotal - (finalTotal * discount / 100.0);
+
+        Console.WriteLine("The total is: " + finalTotal);
+        Console.WriteLine("Discounted total is: " + discountedTotal);
+    
