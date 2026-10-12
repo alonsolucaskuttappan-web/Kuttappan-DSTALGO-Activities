@@ -1,0 +1,12 @@
+﻿Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim numbers() As Integer = {5, 10, 15}
+        Dim total As Integer = 0
+
+        For Each number As Integer In numbers
+            total = total + number
+        Next
+
+        Label1.Text = total.ToString()
+    End Sub
+End Class

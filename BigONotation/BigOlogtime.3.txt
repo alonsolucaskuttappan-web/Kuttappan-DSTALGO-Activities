@@ -1,0 +1,32 @@
+namespace WinFormsApp10
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int low = 1;
+            int high = 100;
+            string output = "";
+
+            while (low <= high)
+            {
+                int middle = (low + high) / 2;
+                output += middle + Environment.NewLine;
+
+                high = middle - 1;
+            }
+
+            label1.Text = output;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
