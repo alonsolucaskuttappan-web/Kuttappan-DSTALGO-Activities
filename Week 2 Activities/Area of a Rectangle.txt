@@ -1,0 +1,11 @@
+﻿double length, width, area;
+
+Console.Write("Enter the length: ");
+length = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Enter the width: ");
+width = Convert.ToDouble(Console.ReadLine());
+
+area = length * width;
+
+Console.WriteLine("Area of the Rectangle: " + area); Console.WriteLine("Hello, World!");

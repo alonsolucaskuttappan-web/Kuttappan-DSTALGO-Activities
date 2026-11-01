@@ -1,0 +1,9 @@
+﻿int age;
+bool isAdult;
+
+Console.Write("Enter your age: ");
+age = Convert.ToInt32(Console.ReadLine());
+
+isAdult = age >= 18;
+
+Console.WriteLine("Is Adult: " + isAdult);

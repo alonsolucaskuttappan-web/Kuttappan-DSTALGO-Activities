@@ -1,0 +1,36 @@
+﻿string name, course;
+int age, yearLevel;
+double prelim, midterm, finalGrade, average;
+
+Console.Write("Enter Name: ");
+name = Console.ReadLine();
+
+Console.Write("Enter Course: ");
+course = Console.ReadLine();
+
+Console.Write("Enter Age: ");
+age = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Enter Year Level: ");
+yearLevel = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Enter Prelim Grade: ");
+prelim = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Enter Midterm Grade: ");
+midterm = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Enter Final Grade: ");
+finalGrade = Convert.ToDouble(Console.ReadLine());
+
+average = (prelim + midterm + finalGrade) / 3;
+
+Console.WriteLine("\n--- STUDENT INFORMATION ---");
+Console.WriteLine("Name: " + name);
+Console.WriteLine("Course: " + course);
+Console.WriteLine("Age: " + age);
+Console.WriteLine("Year Level: " + yearLevel);
+Console.WriteLine("Prelim Grade: " + prelim);
+Console.WriteLine("Midterm Grade: " + midterm);
+Console.WriteLine("Final Grade: " + finalGrade);
+Console.WriteLine("Average Grade: " + average);

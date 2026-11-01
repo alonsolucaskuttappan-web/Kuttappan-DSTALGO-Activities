@@ -1,0 +1,14 @@
+﻿double prelim, midterm, finalGrade, average;
+
+Console.Write("Enter Prelim Grade: ");
+prelim = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Enter Midterm Grade: ");
+midterm = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Enter Final Grade: ");
+finalGrade = Convert.ToDouble(Console.ReadLine());
+
+average = (prelim + midterm + finalGrade) / 3;
+
+Console.WriteLine("Average Grade: " + average);

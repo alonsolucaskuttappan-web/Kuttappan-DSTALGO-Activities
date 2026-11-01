@@ -1,0 +1,6 @@
+﻿bool isStudent;
+
+Console.Write("Are you a student? (true/false): ");
+isStudent = Convert.ToBoolean(Console.ReadLine());
+
+Console.WriteLine("Are you a student? " + isStudent);

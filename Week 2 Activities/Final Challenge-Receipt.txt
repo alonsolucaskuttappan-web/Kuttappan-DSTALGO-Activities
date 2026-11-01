@@ -1,0 +1,43 @@
+﻿
+
+string customerName, product1, product2;
+double price1, price2, subtotal1, subtotal2, total;
+int quantity1, quantity2;
+
+Console.Write("Enter customer name: ");
+customerName = Console.ReadLine();
+
+Console.Write("Enter first product name: ");
+product1 = Console.ReadLine();
+
+Console.Write("Enter first product price: ");
+price1 = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Enter first product quantity: ");
+quantity1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Enter second product name: ");
+product2 = Console.ReadLine();
+
+Console.Write("Enter second product price: ");
+price2 = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Enter second product quantity: ");
+quantity2 = Convert.ToInt32(Console.ReadLine());
+
+subtotal1 = price1 * quantity1;
+subtotal2 = price2 * quantity2;
+total = subtotal1 + subtotal2;
+
+Console.WriteLine("STORE RECEIPT");
+Console.WriteLine("Customer Name: " + customerName);
+Console.WriteLine("Product 1: " + product1);
+Console.WriteLine("Price: " + price1);
+Console.WriteLine("Quantity: " + quantity1);
+Console.WriteLine("Subtotal: " + subtotal1);
+Console.WriteLine("Product 2: " + product2);
+Console.WriteLine("Price: " + price2);
+Console.WriteLine("Quantity: " + quantity2);
+Console.WriteLine("Subtotal: " + subtotal2);
+Console.WriteLine("TOTAL: " + total);
+

@@ -1,0 +1,16 @@
+﻿string employeeName;
+double hoursWorked, hourlyRate, salary;
+
+Console.Write("Enter employee name: ");
+employeeName = Console.ReadLine();
+
+Console.Write("Enter hours worked: ");
+hoursWorked = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Enter hourly rate: ");
+hourlyRate = Convert.ToDouble(Console.ReadLine());
+
+salary = hoursWorked * hourlyRate;
+
+Console.WriteLine("Employee Name: " + employeeName);
+Console.WriteLine("Salary: " + salary);
